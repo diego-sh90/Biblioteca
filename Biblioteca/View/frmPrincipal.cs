@@ -46,12 +46,7 @@ namespace Biblioteca
         {
             MessageBox.Show("Adicionar", "título", MessageBoxButtons.OK, MessageBoxIcon.Information);
             
-            Exemplar exemp = new Exemplar(string titulo, string area, int codRegistro, int codTipoExemplar);
-            exemp.Titulo = txtTitulo.Text;
-            exemp.Area = txtArea.Text;
-            exemp.CodRegistro = Convert.ToInt32(txtCodRegistro);
-            exemp.CodTipoExemplar = Convert.ToInt32(txtCodExemplar);
-
+            Exemplar exemp = new Exemplar(txtTitulo.Text, txtArea.Text, Convert.ToInt32(txtCodRegistro), Convert.ToInt32(txtCodExemplar));
             ExemplarDao exemplarDao = new ExemplarDao(context);
             Exemplar exemplar = exemplarDao.Save(exemp);
 
