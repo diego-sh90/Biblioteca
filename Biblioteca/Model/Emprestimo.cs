@@ -20,62 +20,32 @@ namespace Biblioteca.Model
         [Column("codemprestimo")]
         public int CodEmprestimo
         {
-            get
-            {
-                return this.codEmprestimo;
-            }
-            set
-            {
-                this.codEmprestimo = value;
-            }
+            get { return this.codEmprestimo; }
+            set { this.codEmprestimo = value; }
         }
         [Column("codpessoa")]
         public int CodPessoa
         {
-            get
-            {
-                return this.codPessoa;
-            }
-            set
-            {
-                this.codPessoa = value;
-            }
+            get { return this.codPessoa; }
+            set { this.codPessoa = value; }
         }
         [Column("status")]
         public int Status
         {
-            get
-            {
-                return this.status;
-            }
-            set
-            {
-                this.status = value;
-            }
+            get { return this.status; }
+            set  { this.status = value; }
         }
         [NotMapped]
         public Pessoa Pessoa
         {
-            get
-            {
-                return this.pessoa;
-            }
-            set
-            {
-                this.pessoa = value;
-            }
+            get { return this.pessoa; }
+            set { this.pessoa = value; }
         }
         [NotMapped]
         public List<EmprestimoItem> EmprestimoItems
         {
-            get
-            {
-                return this.emprestimoItens;
-            }
-            set
-            {
-                this.emprestimoItens = value;
-            }
+            get { return this.emprestimoItens; }
+            set  { this.emprestimoItens = value; }
         }
         public Emprestimo ( int codEmprestimo, int codPessoa, int status, Pessoa pessoa, List<EmprestimoItem> emprestimoItems)
         {

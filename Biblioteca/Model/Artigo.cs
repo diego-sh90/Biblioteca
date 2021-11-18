@@ -14,14 +14,8 @@ namespace Biblioteca.Model
         [Column("conferencia")] //mapeamento de colunas no BD
         public String Conferencia
         {
-            get
-            {
-                return this.conferencia;
-            }
-            set
-            {
-                this.conferencia = value;
-            }
+            get { return this.conferencia; }
+            set  { this.conferencia = value; }
         }
         public Artigo (String titulo, String area, int codRegistro, int codTipoExemplar, String conferencia) : base(titulo, area, codRegistro, codTipoExemplar)
         {
