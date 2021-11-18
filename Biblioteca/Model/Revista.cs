@@ -14,14 +14,8 @@ namespace Biblioteca.Model
         [Column("editora")] // mapeamento de colunas no BD
         public String Editora
         {
-            get
-            {
-                return this.editora;
-            }
-            set
-            {
-                this.editora = value;
-            }
+            get {return this.editora;}
+            set {this.editora = value;}
         }
         public Revista (String titulo, String area, int codRegistro, int codTipoExemplar, String editora) : base(titulo, area, codRegistro, codTipoExemplar)
         {

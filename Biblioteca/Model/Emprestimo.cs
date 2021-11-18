@@ -55,6 +55,6 @@ namespace Biblioteca.Model
             this.Pessoa = pessoa;
             this.EmprestimoItems = emprestimoItems;
         }
-        public Emprestimo() { }
+
     }
 }
